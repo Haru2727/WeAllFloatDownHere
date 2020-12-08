@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <title>Positioning Floats</title>
+
+    <!-- <link rel="stylesheets" type = "text/css" href="positioning.css"> -->
+    <!-- this should link me to my css file because its in the same folder but it wont work -->
+    <!-- Tried multiple times to link them.  Created a practice run on another file and it worked -->
+    <style>
+
+    * {
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+/* fixed box */
+    .fixed {
+        width:200px;
+        height: 100px;
+        background: #eee;
+        position:fixed;
+        top:0;
+        left:0;
+        float: left;
+    }
+      /* absolute box */
+    .absolute{
+        width:200px;
+        height:100px;
+        background: #eee;
+        position:absolute;
+        right:-6px;
+        top:200px; 
+    }
+    /* Cant get the h1 text to stick out past the fixed box */
+    body h1{
+        text-align:left;  
+    }
+    .body p{
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px ;
+    }
+    /* relative box */
+    .floats{
+        height:300px;
+        width:1500px;
+        background: #9999;
+        position:relative;
+        left:220px;
+    } 
+
+
+</style>
+</head>
+
+<body>
+
+
+  
+<h1>Heading</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non sem accumsan, vehicula tellus et, aliquet quam. Mauris facilisis nisi neque, et pharetra sem pulvinar sit amet. Maecenas finibus massa quis fringilla eleifend. Mauris nisl mi, commodo rhoncus neque vel, pulvinar faucibus nulla. Sed et nunc dui. Nulla facilisi. Suspendisse nec ante nisi. In tempor quis elit in eleifend. Donec eu commodo diam. Quisque auctor libero ut neque interdum pharetra.
+
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus faucibus tempus facilisis. Fusce laoreet nunc augue, sit amet ultrices velit commodo in. Curabitur quam justo, vestibulum sed cursus id, interdum id diam. In scelerisque nec metus in mollis. Maecenas vitae tellus velit. Nulla porttitor tortor sit amet pharetra faucibus. Praesent tincidunt pharetra tortor quis egestas. Sed at urna ipsum. Praesent auctor tortor quis nunc posuere aliquet. Suspendisse lacinia, neque vel tristique consequat, libero eros rutrum odio, sit amet imperdiet tellus sapien condimentum quam.
+        
+        Praesent rhoncus diam metus, commodo vulputate erat suscipit sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Fusce quis mauris convallis, congue ligula non, laoreet quam. In vehicula odio id enim ornare tincidunt. Cras a augue semper metus eleifend ultricies. Aliquam in rutrum leo. Sed vel mattis augue. Fusce finibus bibendum condimentum. Mauris consequat a neque vel interdum. Integer vel arcu non quam rutrum aliquam.</p>
+       <br>
+       
+       <div class = "fixed">&lt;div&gt;<br>position: fixed</div>
+    
+           <div class= "floats">
+              <relative class= "relative">
+                &lt;div&gt;<br>position: relative
+            </relative>
+              <absoulute class= "absolute">
+                &lt;div&gt;<br>position: absolute
+            </absoulute> 
+        </div>
+
+        
+        <br>
+
+
+
+        <p>Praesent et lectus molestie, hendrerit dui sed, accumsan metus. Cras pulvinar vel ante ac accumsan. Suspendisse est tellus, aliquet a maximus vitae, volutpat eu metus. Fusce convallis eros tincidunt, fermentum massa ac, sollicitudin velit. Cras fermentum dictum quam, et sollicitudin felis egestas vitae. Cras condimentum erat nec nunc finibus tempor. Praesent pulvinar nibh scelerisque, imperdiet mi condimentum, ultricies nisi. Cras nec feugiat elit. Etiam tincidunt sapien ut libero iaculis, euismod volutpat turpis maximus. Donec vitae commodo erat.
+        
+        Proin ultricies, ipsum eu consectetur sodales, ex nisi cursus est, ac ullamcorper nisi dolor ac velit. Proin nec justo et ante venenatis tempor. Nam vitae tortor sapien. Ut vel nunc in leo iaculis lobortis. Proin eget euismod sem, at iaculis arcu. Suspendisse malesuada ante id odio lobortis, ut sagittis nisl fringilla. Donec in suscipit tortor. Quisque ac neque enim. Vestibulum suscipit diam justo, eu posuere massa dictum ac. Nulla pellentesque aliquet ipsum non tincidunt. Etiam varius fringilla ante, a mollis odio vehicula at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eget mollis ipsum.</p>
+
+    </div>  
+</body>
+</html>

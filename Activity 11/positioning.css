@@ -1,0 +1,42 @@
+
+    * {
+      box-sizing: border-box;
+      text-align: center;
+  }
+/* fixed box */
+  .fixed {
+      width:200px;
+      height: 100px;
+      background: #eee;
+      position:fixed;
+      top:0;
+      left:0;
+      float: left;
+  }
+    /* absolute box */
+  .absolute{
+      width:200px;
+      height:100px;
+      background: #eee;
+      position:absolute;
+      right:-6px;
+      top:200px; 
+  }
+
+  /* Cant get the h1 text to stick out past the fixed box */
+  body h1{
+    text-align:left; 
+  }
+    .body p{
+      text-align: center;
+      margin-right: 40px;
+      margin-left: 40px ;
+  }
+/* relative box */
+  .floats{
+      height:300px;
+      width:1500px;
+      background: #9999;
+      position:relative;
+      left:220px;
+  }
